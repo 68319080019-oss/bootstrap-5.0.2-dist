@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPU - Sripatum University</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <span class="bg-white text-primary px-3 py-1 rounded">
+                    <i class="fas fa-graduation-cap me-2"></i>SPU
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-book-open me-2"></i>หลักสูตร</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-info-circle me-2"></i>เกี่ยวกับเรา</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-newspaper me-2"></i>ข่าวสาร</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-phone me-2"></i>ติดต่อเรา</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-user me-2"></i> เข้าสู่ระบบ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel Section -->
+    <section class="mt-5">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+            </div>
+            
+            <!-- Carousel Items -->
+            <div class="carousel-inner">
+                <!-- Slide 1 - Pink Theme -->
+                <div class="carousel-item active">
+                    <div class="py-5" style="min-height: 70vh; background: linear-gradient(135deg, #e91e63 0%, #ad1457 100%);">
+                        <div class="container py-5">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <h1 class="display-4 fw-bold text-white mb-3">
+                                        <i class="fas fa-star text-warning me-3"></i>มีอะไรใหม่ใน<br>
+                                        <span class="text-warning display-2 fw-bolder">
+                                            <i class="fas fa-user-graduate me-3"></i>GRADUATE
+                                        </span><br>
+                                        ปีนี้จากที่ SPU
+                                    </h1>
+                                    <p class="lead text-white mb-4">
+                                        <i class="fas fa-lightbulb text-warning me-2"></i>
+                                        ค้นพบหลักสูตรใหม่และโอกาสการศึกษาที่ทันสมัย พร้อมเปิดโลกแห่งการเรียนรู้ที่ไร้ขีดจำกัด
+                                    </p>
+                                    <a href="#" class="btn btn-warning btn-lg px-4 py-3 rounded-pill fw-bold text-dark">
+                                        <i class="fas fa-paper-plane me-2"></i>Apply Now
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 text-center">
+                                    <div class="position-relative">
+                                        <img src="img/666666.webp" alt="Graduate Students" class="img-fluid rounded shadow">
+                                        <div class="position-absolute top-0 end-0 bg-warning text-dark rounded-circle p-2 m-3">
+                                            <i class="fas fa-trophy fs-4"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2 - Blue Theme -->
+                <div class="carousel-item">
+                    <div class="py-5" style="min-height: 70vh; background: linear-gradient(135deg, #2196f3 0%, #1565c0 100%);">
+                        <div class="container py-5">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <h1 class="display-4 fw-bold text-white mb-3">
+                                        <span class="text-warning display-2 fw-bolder">
+                                            <i class="fas fa-university me-3"></i>CAMPUS
+                                        </span><br>
+                                        <i class="fas fa-eye text-warning me-3"></i>VISIT<br>
+                                        มาเยี่ยมชมกัน
+                                    </h1>
+                                    <p class="lead text-white mb-4">
+                                        <i class="fas fa-map-marked-alt text-warning me-2"></i>
+                                        เยี่ยมชมวิทยาเขตและสัมผัสบรรยากาศการเรียนรู้ พบกับอาจารย์และนักศึกษาในสภาพแวดล้อมจริง
+                                    </p>
+                                    <a href="#" class="btn btn-warning btn-lg px-4 py-3 rounded-pill fw-bold text-dark">
+                                        <i class="fas fa-calendar-check me-2"></i>Book Tour
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 text-center">
+                                    <div class="position-relative">
+                                        <img src="img/download.webp" alt="Campus Tour" class="img-fluid rounded shadow">
+                                        <div class="position-absolute top-0 start-0 bg-warning text-dark rounded-circle p-2 m-3">
+                                            <i class="fas fa-walking fs-4"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 - Purple Theme -->
+                <div class="carousel-item">
+                    <div class="py-5" style="min-height: 70vh; background: linear-gradient(135deg, #9c27b0 0%, #6a1b9a 100%);">
+                        <div class="container py-5">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <h1 class="display-4 fw-bold text-white mb-3">
+                                        <span class="text-warning display-2 fw-bolder">
+                                            <i class="fas fa-layer-group me-3"></i>PROGRAMS
+                                        </span><br>
+                                        หลักสูตรที่<br>
+                                        <i class="fas fa-heart text-warning me-2"></i>เหมาะกับคุณ
+                                    </h1>
+                                    <p class="lead text-white mb-4">
+                                        <i class="fas fa-rocket text-warning me-2"></i>
+                                        หลากหลายหลักสูตรที่ออกแบบมาเพื่อพัฒนาทักษะและความรู้ในยุคดิจิทัล
+                                    </p>
+                                    <a href="#" class="btn btn-warning btn-lg px-4 py-3 rounded-pill fw-bold text-dark">
+                                        <i class="fas fa-search me-2"></i>View Programs
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 text-center">
+                                    <div class="position-relative">
+                                        <img src="img/CHS_9389-for-facebook.webp" alt="Academic Programs" class="img-fluid rounded shadow">
+                                        <div class="position-absolute top-0 end-0 bg-warning text-dark rounded-circle p-2 m-3">
+                                            <i class="fas fa-graduation-cap fs-4"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 4 - Light Theme -->
+                <div class="carousel-item">
+                    <div class="py-5" style="min-height: 70vh; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+                        <div class="container py-5">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <h1 class="display-4 fw-bold text-dark mb-3">
+                                        <span class="text-danger display-2 fw-bolder">
+                                            <i class="fas fa-users me-3"></i>STUDENT
+                                        </span><br>
+                                        <i class="fas fa-life-ring text-danger me-3"></i>LIFE<br>
+                                        ชีวิตนักศึกษา
+                                    </h1>
+                                    <p class="lead text-muted mb-4">
+                                        <i class="fas fa-shapes text-danger me-2"></i>
+                                        ประสบการณ์การเรียนรู้ที่หลากหลาย กิจกรรมนักศึกษา และสิ่งอำนวยความสะดวกครบครัน
+                                    </p>
+                                    <a href="#" class="btn btn-danger btn-lg px-4 py-3 rounded-pill fw-bold">
+                                        <i class="fas fa-compass me-2"></i>Explore Life
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 text-center">
+                                    <div class="position-relative">
+                                        <img src="img/64555423_2470359026342211_5391116879211266048_n.jpg" alt="Student Life" class="img-fluid rounded shadow">
+                                        <div class="position-absolute top-0 start-0 bg-danger text-white rounded-circle p-2 m-3">
+                                            <i class="fas fa-smile fs-4"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- New Icons Section Below Slider -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-6 col-md-2">
+                    <div class="card h-100 border-0 shadow-sm hover-shadow transition">
+                        <div class="card-body text-center p-4">
+                            <div class="text-primary mb-3">
+                                <i class="fas fa-graduation-cap fa-3x"></i>
+                            </div>
+                            <h6 class="fw-bold text-dark mb-2">ปริญญาตรี</h6>
+                            <p class="text-muted small mb-3">หลักสูตร 4 ปี</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">ดูรายละเอียด</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="card h-100 border-0 shadow-sm hover-shadow transition">
+                        <div class="card-body text-center p-4">
+                            <div class="text-success mb-3">
+                                <i class="fas fa-user-graduate fa-3x"></i>
+                            </div>
+                            <h6 class="fw-bold text-dark mb-2">ปริญญาโท</h6>
+                            <p class="text-muted small mb-3">หลักสูตร 2 ปี</p>
+                            <a href="#" class="btn btn-outline-success btn-sm">ดูรายละเอียด</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="card h-100 border-0 shadow-sm hover-shadow transition">
+                        <div class="card-body text-center p-4">
+                            <div class="text-warning mb-3">
+                                <i class="fas fa-university fa-3x"></i>
+                            </div>
+                            <h6 class="fw-bold text-dark mb-2">ปริญญาเอก</h6>
+                            <p class="text-muted small mb-3">หลักสูตร 3 ปี</p>
+                            <a href="#" class="btn btn-outline-warning btn-sm">ดูรายละเอียด</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="card h-100 border-0 shadow-sm hover-shadow transition">
+                        <div class="card-body text-center p-4">
+                            <div class="text-danger mb-3">
+                                <i class="fas fa-laptop fa-3x"></i>
+                            </div>
+                            <h6 class="fw-bold text-dark mb-2">เรียนออนไลน์</h6>
+                            <p class="text-muted small mb-3">เรียนที่บ้าน</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm">ดูรายละเอียด</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="card h-100 border-0 shadow-sm hover-shadow transition">
+                        <div class="card-body text-center p-4">
+                            <div class="text-info mb-3">
+                                <i class="fas fa-certificate fa-3x"></i>
+                            </div>
+                            <h6 class="fw-bold text-dark mb-2">หลักสูตรสั้น</h6>
+                            <p class="text-muted small mb-3">3-6 เดือน</p>
+                            <a href="#" class="btn btn-outline-info btn-sm">ดูรายละเอียด</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="card h-100 border-0 shadow-sm hover-shadow transition">
+                        <div class="card-body text-center p-4">
+                            <div class="text-secondary mb-3">
+                                <i class="fas fa-globe fa-3x"></i>
+                            </div>
+                            <h6 class="fw-bold text-dark mb-2">นานาชาติ</h6>
+                            <p class="text-muted small mb-3">English Program</p>
+                            <a href="#" class="btn btn-outline-secondary btn-sm">ดูรายละเอียด</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Cards Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4 border-start border-danger border-4">
+                            <h5 class="card-title fw-bold mb-3">
+                                <i class="fas fa-camera text-danger me-2"></i>
+                                CAMPUS VISIT
+                            </h5>
+                            <p class="card-text text-muted mb-4">
+                                <i class="fas fa-walking text-muted me-2"></i>
+                                เยี่ยมชมวิทยาเขตและสัมผัสบรรยากาศการเรียนรู้แบบใกล้ชิด พบกับอาจารย์และนักศึกษา
+                            </p>
+                            <a href="#" class="btn btn-outline-danger">
+                                <i class="fas fa-arrow-right me-2"></i>เยี่ยมชมเดี่ยวนี้
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4 border-start border-primary border-4">
+                            <h5 class="card-title fw-bold mb-3">
+                                <i class="fas fa-graduation-cap text-primary me-2"></i>
+                                เรียนปริญญาโท
+                            </h5>
+                            <p class="card-text text-muted mb-4">
+                                <i class="fas fa-chalkboard-teacher text-muted me-2"></i>
+                                หลากหลายสาขาวิชาระดับปริญญาโท พร้อมอาจารย์ผู้เชี่ยวชาญและสิ่งอำนวยความสะดวกครบครัน
+                            </p>
+                            <a href="#" class="btn btn-outline-primary">
+                                <i class="fas fa-list me-2"></i>ดูหลักสูตร
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4 border-start border-success border-4">
+                            <h5 class="card-title fw-bold mb-3">
+                                <i class="fas fa-book text-success me-2"></i>
+                                แนะแนวการศึกษา
+                            </h5>
+                            <p class="card-text text-muted mb-4">
+                                <i class="fas fa-handshake text-muted me-2"></i>
+                                รับคำปรึกษาการศึกษาจากที่ปรึกษาที่มีประสบการณ์ เพื่อเลือกเส้นทางที่เหมาะกับคุณ
+                            </p>
+                            <a href="#" class="btn btn-outline-success">
+                                <i class="fas fa-comments me-2"></i>ปรึกษาเดี่ยวนี้
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Grid Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">
+                <i class="fas fa-award text-primary me-3"></i>หลักสูตรยอดนิยม
+            </h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm hover-shadow transition">
+                        <img src="https://via.placeholder.com/350x200/dc3545/ffffff?text=บริหารธุรกิจ" class="card-img-top" alt="บริหารธุรกิจ">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-danger text-white rounded-circle p-2 me-3">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <h5 class="card-title mb-0 fw-bold">บริหารธุรกิจ</h5>
+                            </div>
+                            <h6 class="fw-bold mb-3 text-danger">
+                                <i class="fas fa-chart-line me-2"></i>หลักสูตรบริหารธุรกิจ
+                            </h6>
+                            <p class="card-text text-muted mb-4">เรียนรู้การบริหารจัดการและพัฒนาธุรกิจสู่ความสำเร็จ</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-danger-subtle text-danger">4 ปี</span>
+                                <a href="#" class="btn btn-outline-danger">
+                                    <i class="fas fa-info-circle me-1"></i>เรียนรู้เพิ่มเติม
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm hover-shadow transition">
+                        <img src="https://via.placeholder.com/350x200/0d6efd/ffffff?text=เทคโนโลยีสารสนเทศ" class="card-img-top" alt="เทคโนโลยีสารสนเทศ">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary text-white rounded-circle p-2 me-3">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <h5 class="card-title mb-0 fw-bold">เทคโนโลยีสารสนเทศ</h5>
+                            </div>
+                            <h6 class="fw-bold mb-3 text-primary">
+                                <i class="fas fa-code me-2"></i>หลักสูตรเทคโนโลยีสารสนเทศ
+                            </h6>
+                            <p class="card-text text-muted mb-4">พัฒนาทักษะด้านเทคโนโลยีและการเขียนโปรแกรม</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-primary-subtle text-primary">4 ปี</span>
+                                <a href="#" class="btn btn-outline-primary">
+                                    <i class="fas fa-info-circle me-1"></i>เรียนรู้เพิ่มเติม
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm hover-shadow transition">
+                        <img src="https://via.placeholder.com/350x200/198754/ffffff?text=การออกแบบ" class="card-img-top" alt="การออกแบบ">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-success text-white rounded-circle p-2 me-3">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                                <h5 class="card-title mb-0 fw-bold">การออกแบบ</h5>
+                            </div>
+                            <h6 class="fw-bold mb-3 text-success">
+                                <i class="fas fa-paint-brush me-2"></i>หลักสูตรการออกแบบ
+                            </h6>
+                            <p class="card-text text-muted mb-4">สร้างสรรค์ผลงานดีไซน์ที่สื่อสารได้อย่างมีประสิทธิภาพ</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-success-subtle text-success">4 ปี</span>
+                                <a href="#" class="btn btn-outline-success">
+                                    <i class="fas fa-info-circle me-1"></i>เรียนรู้เพิ่มเติม
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm hover-shadow transition">
+                        <img src="https://via.placeholder.com/350x200/ffc107/000000?text=การตลาด" class="card-img-top" alt="การตลาด">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-warning text-dark rounded-circle p-2 me-3">
+                                    <i class="fas fa-bullhorn"></i>
+                                </div>
+                                <h5 class="card-title mb-0 fw-bold">การตลาด</h5>
+                            </div>
+                            <h6 class="fw-bold mb-3 text-warning">
+                                <i class="fas fa-chart-pie me-2"></i>หลักสูตรการตลาด
+                            </h6>
+                            <p class="card-text text-muted mb-4">เข้าใจพฤติกรรมผู้บริโภคและกลยุทธ์การตลาดสมัยใหม่</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-warning-subtle text-warning">4 ปี</span>
+                                <a href="#" class="btn btn-outline-warning">
+                                    <i class="fas fa-info-circle me-1"></i>เรียนรู้เพิ่มเติม
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm hover-shadow transition">
+                        <img src="https://via.placeholder.com/350x200/6c757d/ffffff?text=การสื่อสาร" class="card-img-top" alt="การสื่อสาร">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-secondary text-white rounded-circle p-2 me-3">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <h5 class="card-title mb-0 fw-bold">การสื่อสาร</h5>
+                            </div>
+                            <h6 class="fw-bold mb-3 text-secondary">
+                                <i class="fas fa-broadcast-tower me-2"></i>หลักสูตรการสื่อสาร
+                            </h6>
+                            <p class="card-text text-muted mb-4">พัฒนาทักษะการสื่อสารและการผลิตสื่อดิจิทัล</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-secondary-subtle text-secondary">4 ปี</span>
+                                <a href="#" class="btn btn-outline-secondary">
+                                    <i class="fas fa-info-circle me-1"></i>เรียนรู้เพิ่มเติม
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm hover-shadow transition">
+                        <img src="https://via.placeholder.com/350x200/212529/ffffff?text=การจัดการ" class="card-img-top" alt="การจัดการ">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-dark text-white rounded-circle p-2 me-3">
+                                    <i class="fas fa-users-cog"></i>
+                                </div>
+                                <h5 class="card-title mb-0 fw-bold">การจัดการ</h5>
+                            </div>
+                            <h6 class="fw-bold mb-3 text-dark">
+                                <i class="fas fa-chess-king me-2"></i>หลักสูตรการจัดการ
+                            </h6>
+                            <p class="card-text text-muted mb-4">เรียนรู้หลักการจัดการองค์กรและภาวะผู้นำ</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-dark-subtle text-dark">4 ปี</span>
+                                <a href="#" class="btn btn-outline-dark">
+                                    <i class="fas fa-info-circle me-1"></i>เรียนรู้เพิ่มเติม
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Links -->
+    <div class="position-fixed top-50 end-0 translate-middle-y" style="z-index: 1000;">
+        <div class="d-flex flex-column gap-2 me-3">
+            <a href="#" class="btn btn-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; background-color: #3b5998;" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="btn btn-success rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; background-color: #00c300;" title="Line">
+                <i class="fab fa-line"></i>
+            </a>
+            <a href="#" class="btn btn-danger rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; background-color: #ff0000;" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" class="btn btn-danger rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Video Section -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">
+                <i class="fas fa-video text-danger me-3"></i>SPU Video
+            </h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-secondary border-0">
+                        <div class="card-header bg-secondary text-center py-5">
+                            <i class="fas fa-play display-4 text-white"></i>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold text-white">
+                                <i class="fas fa-user-graduate text-white me-2"></i>นักเรียนมหาวิทยาลัยยอม
+                            </h6>
+                            <p class="card-text text-light">
+                                <i class="fas fa-quote-left me-1"></i>
+                                เรื่องราวการเรียนรู้และประสบการณ์ของนักศึกษา SPU
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-secondary border-0">
+                        <div class="card-header bg-secondary text-center py-5">
+                            <i class="fas fa-play display-4 text-white"></i>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold text-white">
+                                <i class="fas fa-university text-white me-2"></i>Campus Tour
+                            </h6>
+                            <p class="card-text text-light">
+                                <i class="fas fa-route me-1"></i>
+                                พาชมบรรยากาศและสิ่งอำนวยความสะดวกภายในมหาวิทยาลัย
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-secondary border-0">
+                        <div class="card-header bg-secondary text-center py-5">
+                            <i class="fas fa-play display-4 text-white"></i>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold text-white">
+                                <i class="fas fa-chalkboard-teacher text-white me-2"></i>อาจารย์ผู้เชี่ยวชาญ
+                            </h6>
+                            <p class="card-text text-light">
+                                <i class="fas fa-star me-1"></i>
+                                รู้จักกับคณาจารย์ผู้เชี่ยวชาญในแต่ละสาขาวิชา
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-danger fw-bold mb-3">
+                        <i class="fas fa-info-circle me-2"></i>เกี่ยวกับ SPU
+                    </h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#" class="text-light text-decoration-none">
+                                <i class="fas fa-history me-2"></i>ประวัติมหาวิทยาลัย
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-light text-decoration-none">
+                                <i class="fas fa-eye me-2"></i>วิสัยทัศน์
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-light text-decoration-none">
+                                <i class="fas fa-user-tie me-2"></i>ผู้บริหาร
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-danger fw-bold mb-3">
+                        <i class="fas fa-book me-2"></i>หลักสูตร
+                    </h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#" class="text-light text-decoration-none">
+                                <i class="fas fa-graduation-cap me-2"></i>ปริญญาตรี
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-light text-decoration-none">
+                                <i class="fas fa-user-graduate me-2"></i>ปริญญาโท
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-light text-decoration-none">
+                                <i class="fas fa-university me-2"></i>ปริญญาเอก
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-danger fw-bold mb-3">
+                        <i class="fas fa-phone me-2"></i>ติดต่อเรา
+                    </h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2 text-light">
+                            <i class="fas fa-map-marker-alt me-2"></i>61 ถ.พหลโยธิน แขวงสามเสนใน เขตพญาไท กรุงเทพฯ 10400
+                        </li>
+                        <li class="mb-2 text-light">
+                            <i class="fas fa-phone me-2"></i>02-579-1111
+                        </li>
+                        <li class="mb-2 text-light">
+                            <i class="fas fa-envelope me-2"></i>info@spu.ac.th
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-danger fw-bold mb-3">
+                        <i class="fas fa-share-alt me-2"></i>ติดตามเรา
+                    </h6>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-primary btn-sm">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="btn btn-success btn-sm">
+                            <i class="fab fa-line"></i>
+                        </a>
+                        <a href="#" class="btn btn-danger btn-sm">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="btn btn-danger btn-sm">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0 text-muted">
+                        <i class="fas fa-copyright me-2"></i>© 2024 Sripatum University. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom CSS for hover effects -->
+    <style>
+        .hover-shadow {
+            transition: all 0.3s ease;
+        }
+        .hover-shadow:hover {
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+            transform: translateY(-2px);
+        }
+        .transition {
+            transition: all 0.3s ease;
+        }
+    </style>
+</body>
+</html>
