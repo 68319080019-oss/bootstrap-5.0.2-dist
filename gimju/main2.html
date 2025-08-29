@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>กิมจู ร้านอาหารสัตหีบ | อาหารเกาหลี-ไทย</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #d63384;
+            --secondary-color: #fd7e14;
+            --accent-color: #6f42c1;
+        }
+        
+        body {
+            font-family: 'Sarabun', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .navbar {
+            background: rgba(255, 255, 255, 0.95) !important;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="%23ff6b6b"/><circle cx="300" cy="200" r="100" fill="%23feca57" opacity="0.8"/><circle cx="900" cy="600" r="150" fill="%2348dbfb" opacity="0.6"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .card {
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+        }
+        
+        .btn-custom {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            border-radius: 50px;
+            padding: 12px 30px;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-custom:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(214, 51, 132, 0.4);
+            color: white;
+        }
+        
+        .section-padding {
+            padding: 80px 0;
+        }
+        
+        .contact-info {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .footer {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 40px 0 20px;
+        }
+        
+        .feature-box {
+            text-align: center;
+            padding: 30px 20px;
+            height: 100%;
+        }
+        
+        .feature-box i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="main2.html">
+                <i class="fas fa-utensils me-2"></i>กิมจู สัตหีบ
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="main2.html">หน้าแรก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">เมนูอาหาร</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">แกลเลอรี่</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="location.html">ที่ตั้ง & ที่จอดรถ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">ติดต่อ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">เกี่ยวกับเรา</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h1 class="display-3 fw-bold mb-4">ร้านอาหารกิมจู</h1>
+                    <p class="lead mb-5">อาหารเกาหลี-ไทย รสชาติต้นตำรับ ที่สัตหีบ ชลบุรี</p>
+                    <a href="menu.html" class="btn btn-custom btn-lg me-3">
+                        <i class="fas fa-eye me-2"></i>ดูเมนูอาหาร
+                    </a>
+                    <a href="contact.html" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-phone me-2"></i>ติดต่อร้าน
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel -->
+    <div id="restaurantCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#restaurantCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#restaurantCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#restaurantCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div style="height: 400px; background: linear-gradient(45deg, #ff9a9e, #fecfef); display: flex; align-items: center; justify-content: center;">
+                    <div class="text-center text-white">
+                        <i class="fas fa-store fa-4x mb-3"></i>
+                        <h3>บรรยากาศร้าน</h3>
+                        <p>ร้านอาหารสไตล์เกาหลี บรรยากาศอบอุ่น ตกแต่งสวยงาม</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div style="height: 400px; background: linear-gradient(45deg, #a8edea, #fed6e3); display: flex; align-items: center; justify-content: center;">
+                    <div class="text-center text-white">
+                        <i class="fas fa-leaf fa-4x mb-3"></i>
+                        <h3>วัตถุดิบสดใหม่</h3>
+                        <p>คัดสรรวัตถุดิบคุณภาพ ปรุงสดใหม่ทุกวัน</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div style="height: 400px; background: linear-gradient(45deg, #ffecd2, #fcb69f); display: flex; align-items: center; justify-content: center;">
+                    <div class="text-center text-white">
+                        <i class="fas fa-heart fa-4x mb-3"></i>
+                        <h3>บริการใส่ใจ</h3>
+                        <p>ทีมงานมืออาชีพ บริการด้วยใจ พร้อมให้คำแนะนำ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#restaurantCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#restaurantCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Features Section -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3">จุดเด่นของร้าน</h2>
+                    <p class="lead text-muted">สิ่งที่ทำให้ร้านกิมจูแตกต่าง</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body feature-box">
+                            <i class="fas fa-pepper-hot"></i>
+                            <h5>อาหารเกาหลี</h5>
+                            <p>เมนูเกาหลีต้นตำรับ รสชาติแท้ๆ</p>
+                            <a href="menu.html#korean" class="btn btn-outline-primary">ดูเมนู</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body feature-box">
+                            <i class="fas fa-fish"></i>
+                            <h5>ซีฟู้ดสด</h5>
+                            <p>อาหารทะเลสดใหม่จากท้องถิ่น</p>
+                            <a href="menu.html#seafood" class="btn btn-outline-primary">ดูเมนู</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body feature-box">
+                            <i class="fas fa-parking"></i>
+                            <h5>ที่จอดรถ</h5>
+                            <p>ที่จอดรถกว้างขวาง สะดวกสบาย</p>
+                            <a href="location.html" class="btn btn-outline-primary">ดูข้อมูล</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body feature-box">
+                            <i class="fas fa-clock"></i>
+                            <h5>เปิดทุกวัน</h5>
+                            <p>เปิดบริการ 10:00-21:00 น.</p>
+                            <a href="contact.html" class="btn btn-outline-primary">ติดต่อ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Menu Preview -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold text-white mb-3">เมนูยอดนิยม</h2>
+                    <p class="lead text-white-50">ลิ้มรสอาหารอร่อยของเรา</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div style="height: 200px; background: linear-gradient(45deg, #ff6b6b, #ffa500); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-pepper-hot fa-4x text-white"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">กิมจิจิเก</h5>
+                            <p class="card-text">ซุปกิมจิเกาหลีแท้ รสเปรี้ยวจัดจ้าน</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-primary">120 บาท</span>
+                                <a href="menu.html#korean" class="btn btn-custom btn-sm">ดูรายละเอียด</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div style="height: 200px; background: linear-gradient(45deg, #4ecdc4, #44a08d); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-bowl-food fa-4x text-white"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">ก๋วยเตี๋ยวต้มยำ</h5>
+                            <p class="card-text">ก๋วยเตี๋ยวต้มยำน้ำข้น รสจัดจ้าน</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-primary">55 บาท</span>
+                                <a href="menu.html#noodles" class="btn btn-custom btn-sm">ดูรายละเอียด</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div style="height: 200px; background: linear-gradient(45deg, #667eea, #764ba2); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-fish fa-4x text-white"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">ซีฟู้ดผัดกิมจิ</h5>
+                            <p class="card-text">ผัดกิมจิกับซีฟู้ดสดใหม่</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-primary">250 บาท</span>
+                                <a href="menu.html#seafood" class="btn btn-custom btn-sm">ดูรายละเอียด</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="menu.html" class="btn btn-custom btn-lg">
+                    <i class="fas fa-utensils me-2"></i>ดูเมนูทั้งหมด
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info Section -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3">ข้อมูลร้าน</h2>
+                    <p class="lead text-muted">ข้อมูลสำคัญที่คุณควรรู้</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-map-marker-alt fa-3x text-danger mb-3"></i>
+                            <h5>ที่ตั้งร้าน</h5>
+                            <p>457/12 ถนนเทศบาล 8<br>ตำบลสัตหีบ อำเภอสัตหีบ<br>ชลบุรี 20180</p>
+                            <a href="location.html" class="btn btn-outline-primary">ดูแผนที่</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-clock fa-3x text-success mb-3"></i>
+                            <h5>เวลาเปิด-ปิด</h5>
+                            <p>เปิดทุกวัน<br>10:00 - 21:00 น.<br>(ไม่มีวันหยุด)</p>
+                            <a href="contact.html" class="btn btn-outline-primary">ติดต่อร้าน</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5><i class="fas fa-utensils me-2"></i>กิมจู สัตหีบ</h5>
+                    <p class="text-light">ร้านอาหารเกาหลี-ไทย รสชาติต้นตำรับ บรรยากาศอบอุ่น บริการใส่ใจ</p>
+                    <div class="mt-3">
+                        <a href="about.html" class="btn btn-outline-light btn-sm me-2">เกี่ยวกับเรา</a>
+                        <a href="gallery.html" class="btn btn-outline-light btn-sm">แกลเลอรี่</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h6>ลิงค์หน้าต่างๆ</h6>
+                    <ul class="list-unstyled text-light">
+                        <li><a href="main2.html" class="text-light"><i class="fas fa-home me-2"></i>หน้าแรก</a></li>
+                        <li><a href="menu.html" class="text-light"><i class="fas fa-utensils me-2"></i>เมนูอาหาร</a></li>
+                        <li><a href="gallery.html" class="text-light"><i class="fas fa-images me-2"></i>แกลเลอรี่</a></li>
+                        <li><a href="location.html" class="text-light"><i class="fas fa-map-marker-alt me-2"></i>ที่ตั้ง & ที่จอดรถ</a></li>
+                        <li><a href="contact.html" class="text-light"><i class="fas fa-phone me-2"></i>ติดต่อ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6>ติดต่อเรา</h6>
+                    <ul class="list-unstyled text-light">
+                        <li><i class="far fa-clock me-2"></i>จันทร์-อาทิตย์: 10:00-21:00</li>
+                        <li><i class="fas fa-phone me-2"></i>038-123-4567</li>
+                        <li><i class="fab fa-line me-2"></i>@gimjoo_sattahip</li>
+                    </ul>
+                    <div class="social-links mt-3">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook-f fa-2x"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-line fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4" style="color: white;">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 ร้านอาหารกิมจู สัตหีบ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Smooth scrolling for navbar links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        window.addEventListener('scroll', () => {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        // Initialize cards with animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            });
+        });
+    </script>
+</body>
+</html>
